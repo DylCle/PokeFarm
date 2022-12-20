@@ -39,6 +39,8 @@ body:before{
     background-size: cover;
 }
 
+
+
 #select-game{
     background-color: var(--primary-color);
     border-radius: 1em;
@@ -51,7 +53,7 @@ body:before{
 body{
     background-image: var(--main-background);
     background-size: 65%;
-
+    
     background-attachment: fixed;
     width: 99%;
     margin: 4em auto;
@@ -201,6 +203,7 @@ body{
         background-attachment: fixed;
         background-size: contain;
         margin: 4em auto;
+      
     }
 
 
@@ -293,6 +296,7 @@ body{
     body{
         margin-top: 1em;
         background-color: var(--body-main);
+        
     }
     
         body:before{

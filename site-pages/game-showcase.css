@@ -1,0 +1,108 @@
+:root{
+    --primary-color:  rgb(229, 243, 255);
+    --secondary-color: rgb(49, 49, 49);
+    --main-background: url(background.png);
+    --second-background: url(darkmodebg.jpg);
+    --body-main:rgb(119, 201, 252);
+    --body-second: #1C246D;
+    
+}
+
+.dark-them {
+    --primary-color: rgb(49, 49, 49);
+    --secondary-color:  rgb(229, 243, 255);
+    --main-background: url(darkmodebg.jpg);
+    --second-background: url(background.png);
+    --body-main: #1C246D; 
+    --body-second: rgb(119, 201, 252);
+
+}
+
+
+#gameHeading {
+    background-color: var(--primary-color);
+    border-radius: 1em;
+    padding: 1em 0 1em 1em;
+    display: grid;
+    
+    grid-template-columns:95%;
+}
+
+#gameInfo {
+    font-size: small;
+    text-align:justify;
+}
+
+
+
+
+#imgSlot {
+    width: 50%;
+    margin: 0 auto;
+    padding: 0;
+
+}
+
+#imgSlot img {
+    width: 100%;
+    margin: 0;
+}
+
+#funFact {
+    width: 99%;
+    margin: 1em auto;
+    text-align: center;
+}
+
+#funFact img {
+    width: 80%;
+    margin: 0 auto;
+
+}
+#funFactInfoLayout {
+    background-color: var(--primary-color);
+    border-radius: 1em;
+    padding: 1em 0;
+    display: grid;
+    gap: 3%;
+    grid-template-columns: 40% 55%;
+}
+
+
+#funFactInfoLayout-2 {
+    background-color: var(--primary-color);
+    border-radius: 1em;
+    padding: 1em 0;
+    padding-left: 0.01em;
+    display: grid;
+    gap: 3%;
+    grid-template-columns: 50% 50%;
+}
+
+#weekInfo, #platInfo {
+    margin-top: 1%;
+    font-size: small;
+    text-align:justify;
+}
+
+#platInfo {
+grid-column-start: span 2;
+width: 90%;
+padding-left: 1em;
+}
+
+#imgSlot-funFact img{
+    border-radius: 2%;
+    border: 1px solid rgb(129, 129, 129);
+    margin: 1em 0 0 0.5em;
+width: 90%;
+}
+#imgSlot-funFact2 img {
+    margin-top: 1.05em;
+    width: 90%;
+    border-radius: 2%;
+    border: 1px solid rgb(129, 129, 129);
+}
+
+
+
