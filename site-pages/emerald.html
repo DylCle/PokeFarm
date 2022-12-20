@@ -16,7 +16,7 @@
         <link rel="stylesheet" href="game-showcase.css">
         <title>PokeFarm</title>
     </head>
-<body>
+<body id="body">
     <div id="wrapper">
         <div id="head">
             <div class="logoArea">
@@ -60,16 +60,40 @@
 
     </div>
     <script>
-        var icon = document.getElementById("icon");
-        icon.onclick = function(){
-            document.body.classList.toggle("dark-them");
-            if(document.body.classList.contains("dark-them")){
-                icon.src = "../sun.png";
-            }else{
-                icon.src = "../darkmodetoogle.png";
-            }
-            }
-        
+    let darkMode = localStorage.getItem(".dark-them");
+    const icon = document.querySelector("#icon");
+
+
+
+
+    const enableDarkMode = () => {
+        document.body.classList.add("dark-them");
+        localStorage.setItem(".dark-them", "enabled");
+        icon.src = "../sun.png";
+    };
+    const disableDarkMode = () => {
+        document.body.classList.remove("dark-them");
+        localStorage.setItem(".dark-them", null);
+        icon.src = "../darkmodetoogle.png";
+    };
+
+    if (darkMode === "enabled") {
+        enableDarkMode();
+    }
+
+    
+
+    icon.addEventListener("click", () => {
+
+        darkMode = localStorage.getItem(".dark-them");
+        if(darkMode !== "enabled"){
+            enableDarkMode();
+        }else {
+            disableDarkMode();
+        }
+    });
     </script>
+
+
 </body>
 </html>

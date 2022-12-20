@@ -53,9 +53,12 @@
 
             <div id="platInfo">
                 <p>
-                    There is a hidden game event, where if you bring a Arceus that was caught in Hall of Origns 
+                    <span style="text-decoration: line-through;">There is a hidden game event, where if you bring a Arceus that was caught in Hall of Origns 
                     (from Pt/D/P) you will see a cool cut scene. What makes this interesting, is there is no legit 
-                    way to obtain a Hall of Orign Arceus since they Azure flute was never distrubuted.
+                    way to obtain a Hall of Orign Arceus since they Azure flute was never distrubuted.</span><br>
+                    <span style="color:red; font-weight: bolder;">
+                        Info above has been fact checked by Ranbert/MirageMaster
+                    </span>
                 </p>
             </div>
         </div>
@@ -64,16 +67,38 @@
 
     </div>
     <script>
-        var icon = document.getElementById("icon");
-        icon.onclick = function(){
-            document.body.classList.toggle("dark-them");
-            if(document.body.classList.contains("dark-them")){
-                icon.src = "../sun.png";
-            }else{
-                icon.src = "../darkmodetoogle.png";
-            }
-            }
-        
-    </script>
+      let darkMode = localStorage.getItem(".dark-them");
+    const icon = document.querySelector("#icon");
+
+
+
+
+    const enableDarkMode = () => {
+        document.body.classList.add("dark-them");
+        localStorage.setItem(".dark-them", "enabled");
+        icon.src = "../sun.png";
+    };
+    const disableDarkMode = () => {
+        document.body.classList.remove("dark-them");
+        localStorage.setItem(".dark-them", null);
+        icon.src = "../darkmodetoogle.png";
+    };
+
+    if (darkMode === "enabled") {
+        enableDarkMode();
+    }
+
+    
+
+    icon.addEventListener("click", () => {
+
+        darkMode = localStorage.getItem(".dark-them");
+        if(darkMode !== "enabled"){
+            enableDarkMode();
+        }else {
+            disableDarkMode();
+        }
+    });
+</script>
 </body>
 </html>

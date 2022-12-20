@@ -5,6 +5,8 @@
     --second-background: url(darkmodebg.jpg);
     --body-main:rgb(119, 201, 252);
     --body-second: #1C246D;
+    --icon-main: url(darkmodetoogle.png);
+    --icon-second: url(sun.png);
     
 }
 
@@ -15,6 +17,8 @@
     --second-background: url(background.png);
     --body-main: #1C246D; 
     --body-second: rgb(119, 201, 252);
+    --icon-main:  url(sun.png);
+    --icon-second: url(darkmodetoogle.png);
 
 }
 
@@ -278,6 +282,7 @@ body{
     }
 
     #icon {
+        background-image: var(--icon-main);
         width: 10%;  
         float: right;   
     }
@@ -294,8 +299,10 @@ body{
     }
     
     body{
-        margin-top: 1em;
+
         background-color: var(--body-main);
+        background-attachment: fixed;
+        position: fixed;
         
     }
     
@@ -303,6 +310,7 @@ body{
             background: var(--main-background);
             content: "";
             position: fixed;
+            background-attachment: fixed;
             left: 0;
             top: 0;
             width: 100%;
