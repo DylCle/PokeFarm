@@ -79,6 +79,18 @@
     grid-template-columns: 50% 50%;
 }
 
+#funFactInfoLayout-3 {
+    background-color: var(--primary-color);
+    border-radius: 1em;
+    padding: 1em 0;
+    padding-left: 1em;
+    display: grid;
+  
+    grid-template-columns: 100%;
+}
+
+
+
 #weekInfo, #platInfo {
     margin-top: 1%;
     font-size: small;

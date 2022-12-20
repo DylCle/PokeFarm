@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:url" content="https://dylcle.github.io/PokeFarm/"/>
+    <meta property="og:type" content="article"/>
+    <meta property="og:title" content="PokeFarm" />
+    <meta property="og:description" content="Discover Marill"/>
+    <meta property="og:image" content="https://dylcle.github.io/PokeFarm/pkmnWeek/maril.png"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="apple-touch-con" type="image/png" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="stylesheet" href="../base.css">
+    <link rel="stylesheet" href="game-showcase.css">
+    <title>PokeFarm</title>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="head">
+            <div class="logoArea">
+                <div > <img id="icon" src="../darkmodetoogle.png" alt=""></div>
+                <a href="../index.html"><img id="logo" src="../logo.png" alt=""></a>
+            </div>
+        </div>
+
+        <div id="gameHeading">
+            <div id="imgSlot">
+                <img src="../Box-Art/soulsilver-art.png" style="border-radius: 2%; border: 1px solid rgb(155, 155, 155);" alt="">
+            </div>
+
+            <div id="gameInfo">
+                <p>
+                    <span style="font-weight:bolder;">Pokémon SoulSilver Version </span>(Japanese: ポケットモンスター ソウルシルバー Pocket Monsters SoulSilver) 
+                    are paired Generation IV remakes of the Generation II games Pokémon Gold and Silver. Much like how Pokémon FireRed and LeafGreen revisited 
+                    the Generation I story of Kanto, HeartGold and SoulSilver retell the story of Johto, with the player's starting town being New Bark Town.
+                    While the games feature several expansions in key areas, the overall plot follows the same direction as the original Gold and Silver. 
+                    Some aspects exclusive to Crystal are also included. Like how FireRed and LeafGreen could link up with Ruby, Sapphire, and Emerald to complete
+                     the Pokédex by trading regionally exclusive Pokémon, HeartGold and SoulSilver can link up with Diamond, Pearl, and Platinum to obtain Pokémon 
+                     unavailable in Johto and Kanto (such as the Sinnoh starters) and vice versa.
+            </div>
+        </div>
+
+        <div id="funFact">
+            <img src="imgs/funfacrt.png" alt="">
+        </div>
+
+        <div id="funFactInfoLayout-3">
+            <div id="imgSlot-funFact">
+                <img src="imgs/areceus.jpg" alt="">
+            </div>
+
+            <div id="platInfo">
+                <p>
+                    There is a hidden game event, where if you bring a Arceus that was caught in Hall of Origns 
+                    (from Pt/D/P) you will see a cool cut scene. What makes this interesting, is there is no legit 
+                    way to obtain a Hall of Orign Arceus since they Azure flute was never distrubuted.
+                </p>
+            </div>
+        </div>
+        
+
+
+    </div>
+    <script>
+        var icon = document.getElementById("icon");
+        icon.onclick = function(){
+            document.body.classList.toggle("dark-them");
+            if(document.body.classList.contains("dark-them")){
+                icon.src = "../sun.png";
+            }else{
+                icon.src = "../darkmodetoogle.png";
+            }
+            }
+        
+    </script>
+</body>
+</html>
