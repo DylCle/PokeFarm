@@ -1,0 +1,21 @@
+ 
+
+
+  .topnav a.icon {
+
+    border-radius: 20%;
+    position: absolute;
+    top: 0.5em;
+    left: 1em;
+    display: inline-block;
+  }
+    
+    
+/* shows menu after icon is clicked*/
+  .topnav.responsive .icon {
+    border-radius: 0;
+    width: 100%;
+    position: static;
+    top: 2em;
+    left: 0;
+  }

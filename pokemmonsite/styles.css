@@ -1,0 +1,305 @@
+
+@import url(nav.css);
+
+.topnav a {
+
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 0.875em 1em;
+    text-decoration: none;
+    font-size: 1.0625em;
+  }
+  
+  .topnav a:hover {
+    background-color: rgba(112, 112, 112, 0.705);
+    color: #000;
+  }
+  
+  .topnav a.active {
+    background-color: rgba(112, 112, 112, 0.705);
+    color: #fff;
+  }
+  
+
+*{
+    font-family: sans-serif;
+}
+
+body{
+    background-image: url(background.png);
+    background-size: 65%;
+
+    background-attachment: fixed;
+    width: 99%;
+    margin: 4em auto;
+}
+
+#logo {
+    background-image: url(logo.png);
+    background-size: 380px;
+    background-repeat: no-repeat;
+    height: 6em;
+    background-position: center;
+}
+#wrapper {
+    width: 60%;
+    margin: 0 auto;
+}
+
+#grid-columns {
+    border-radius: 5em;
+    gap: 1em;
+    background-color: rgba(112, 112, 112, 0.705);
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+#grid-columns2, #grid-columns3 {
+    margin-top: 1em;
+    border-radius: 5em;
+    gap: 1em;
+    background-color: rgba(112, 112, 112, 0.705);
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+#flygon, #vibrava, #trapinch, #charizard, #charmeleon, #charmander, #galade, #kirlia, #ralts{    
+    height: 25em;
+    background-position: center;
+    background-repeat: no-repeat;}
+
+#flygon {
+background-image: url(330Flygon.png);
+background-size: 290px;
+position: relative;
+bottom: 3em;
+order: 5;
+}
+
+#vibrava {
+background-image: url(329.png);
+background-size: 12.5em;
+order: 3;
+}
+
+#trapinch {
+    background-image: url(328.png);
+    background-size: 100px;
+    background-position: center;
+    order: 1;
+    
+}
+
+.arrow1, .arrow2 {
+      margin-top: 150px;
+      margin-left: 100px;
+      width: 0;
+      height: 0;
+      border-top: 50px solid transparent;
+      border-left: 100px solid rgb(0, 81, 255);
+      border-bottom: 50px solid transparent;
+    }
+
+    .arrow1 {
+        order: 2;
+    }
+
+    .arrow2{
+        order: 4;
+
+    }
+
+
+    #charizard {
+        background-image: url(1200px-Charizard_SSBU.png);
+        background-size: 290px;
+        order: 5;
+        }
+    #charmeleon{
+        background-image: url(https://assets.pokemon.com/assets/cms2/img/pokedex/full/005.png);
+        background-repeat: no-repeat;
+        background-size: 250px;
+        order: 4;
+    }
+
+    #charmander {
+        background-image: url(https://i.pinimg.com/originals/89/eb/96/89eb96f564dd8335a07467bda39e344c.png);
+        background-size: 150px;
+        background-repeat: no-repeat;
+    }
+
+    
+    #galade {
+        background-image: url(https://assets.pokemon.com/assets/cms2/img/pokedex/full/475.png);
+        background-size: 330px;
+        order: 5;
+}
+
+.text{
+    background-color:aliceblue;
+    margin-top: 332px;
+     margin-left: 70px; 
+     display: inline-block;
+     border-radius: 5em;
+    padding: 1em 2em;
+    }
+
+
+#kirlia {
+    background-image: url(https://assets.pokemon.com/assets/cms2/img/pokedex/full/281.png);
+    background-size: 250px;
+    order: 3;
+}
+
+#ralts {
+    background-image: url(https://marriland.com/wp-content/plugins/marriland-core/images/pokemon/sprites/home/full/ralts.png);
+    background-size: 250px;
+}
+
+#txtFlygon{
+    margin-top: 22.999em;
+}
+
+#txtVib{
+    margin-top: 320px; margin-left: 105px; padding: 1em 1.5em;
+}
+
+#txtTrap {
+    margin-top: 19.99em;
+}
+
+@media only screen and (min-width: 1em) and (max-width: 40em){
+
+body{
+    margin-top: 1em;
+    background-color: rgb(119, 201, 252);
+}
+
+#logo{
+    background-image: url(logo.png);
+    background-repeat: no-repeat ;
+    background-size: 20em;
+    margin-top: 1em;
+    height: 6em;
+
+}
+    body:before{
+        background: url(background.png);
+        content: "";
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -10;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
+    #wrapper {
+        width: 100%;
+
+    }
+    
+    #grid-columns, #grid-columns2 {
+        overflow-y: hidden;
+        border-radius: 5em;
+        gap: 0;
+        background-color: rgba(112, 112, 112, 0.705);
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    .arrow1, .arrow2 {
+        margin-top: 50px;
+        margin-left: 10px;
+        width: 0;
+        height: 0;
+        border-top: 20px solid transparent;
+        border-left: 10px solid rgb(0, 81, 255);
+        border-bottom: 20px solid transparent;
+      }
+
+  .lvl {
+     right: 100%;
+  }
+      
+#flygon, #vibrava, #trapinch, #charizard, #charmeleon, #charmander, #galade, #kirlia, #ralts{    
+    height: 8em;
+    width: 6em;
+    position: relative;
+    bottom: 1em;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50px;
+
+}
+
+#charmander {
+    background-size: 35px;
+    bottom: 0.06em;
+    left: 1em;
+}
+
+#flygon {
+background-size: 90px;
+right: 1em;
+order: 5;
+}
+
+#vibrava {
+    background-size: 75px;
+    right: 0.5em;
+    bottom: 1em;
+ 
+}
+
+#trapinch {
+    bottom: 0.5em;
+    left: 1em;
+}
+
+#txtTrap{
+    position: relative;
+    display: inline-block;
+    right: 3.9em;
+    bottom: 13em;
+}
+
+
+
+#txtVib{
+    position: relative;
+    display: inline-block;
+    right: 6.5em;
+    bottom: 17em;  
+}
+
+#txtChar {
+bottom: 18.5em;
+right: 4.5em;
+}
+
+
+
+#txtFlygon {
+    position: relative;
+    display: inline-block;
+    right: 4.5em;
+    bottom: 15.4em;
+}
+
+.text, #txtVib, #txtTrap, #txtFlygon, #txtChar{
+
+    background-color:aliceblue;
+  position: relative;
+
+  font-size: small;
+     display: inline-block;
+     border-radius: 5em;
+    padding: 0.5em;
+    }
+}
