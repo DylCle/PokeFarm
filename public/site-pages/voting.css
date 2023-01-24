@@ -1,0 +1,116 @@
+
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+#select-game{
+    padding-top: 1em;
+    background-color: var(--primary-color);
+    border-radius: 1em;
+    display: grid;
+    height: 19em;
+    grid-template-columns: 100%;
+}
+body,
+input,
+textarea,
+select,
+button {
+  color: white;
+  font: 400 1rem "Roboto", sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+main {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+
+.searchBox {
+  display: flex;
+  justify-content: center;
+ align-items: center;
+  color: black;
+}
+
+.searchBox input {
+  border-radius: 8px 0 0 8px;
+  border: 0;
+  outline: none;
+  height: 36px;
+  padding: 4px 16px;
+  background-color: white;
+
+
+}
+
+.searchBox button {
+  border-radius: 0 8px 8px 0;
+  border: 0;
+  height: 36px;
+  padding: 4px 16px;
+  background-color: rgb(255, 255, 255);
+}
+
+.pokemonBox {
+    display: grid;
+    grid-template-columns: 100%;
+    justify-content: center;
+  }
+
+.pokemonBox img {
+    
+  width: 12em;
+  margin: 0 auto;
+}
+
+.pokemonBox p {
+  margin-top: 1rem;
+}
+
+.pokemonBox .pokemonInfos {
+  padding: 2rem;
+}
+
+#pokemonName {
+    color: rgb(70, 70, 70);
+}
+
+#name {
+    text-align: center;
+    margin-bottom: 1em;
+
+}
+
+#vote {
+    width: 8em;
+    color: var(--seconday-color);
+    margin: 0 auto;
+    justify-content: center;
+    display: flex;
+    border: 0;
+    margin-top: 1em;
+    background-color: var(--primary-color);
+    border-radius: 1em;
+    padding: 1em 0;
+    font-size: large;
+    font-weight: bolder;
+ 
+}
+
+

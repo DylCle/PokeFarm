@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:url" content="https://dylcle.github.io/PokeFarm/"/>
+    <meta property="og:type" content="article"/>
+    <meta property="og:title" content="PokeFarm" />
+    <meta property="og:description" content="Discover Marill"/>
+    <meta property="og:image" content="https://dylcle.github.io/PokeFarm/pkmnWeek/maril.png"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="apple-touch-con" type="image/png" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="voting.css">
+    <title>PokeFarm</title>
+</head>
+<body>
+    <div id="wrapper">
+  
+        <div id="head">
+            <div class="logoArea">
+               <img id="icon" src="../imgs/darkmodetoogle.png" alt="">
+                <a href="../index.html"><img id="logo" src="../imgs/logo.png" alt=""></a>
+            </div>
+        </div>
+        <div id="select-game">
+            <div class="searchBox">
+                <input type="text" id="pokemonName" placeholder="Pokemon Name" name="_id">
+                <button id="search">🔍</button>
+            </div>
+            <div class="pokemonBox">
+                
+       
+            </div>
+        </div>
+
+     
+       
+        <div id="votebtn">
+            
+          
+
+    
+          
+            </div>
+            
+        </div>
+       
+        </div>
+    </div>
+
+   <a href=""></a>
+   <script>
+    let darkMode = localStorage.getItem(".dark-them");
+    const icon = document.querySelector("#icon");
+
+
+
+
+    const enableDarkMode = () => {
+        document.body.classList.add("dark-them");
+        localStorage.setItem(".dark-them", "enabled");
+        icon.src = "../../imgs/sun.png";
+    };
+    const disableDarkMode = () => {
+        document.body.classList.remove("dark-them");
+        localStorage.setItem(".dark-them", null);
+        icon.src = "../../imgs/darkmodetoogle.png";
+    };
+
+    if (darkMode === "enabled") {
+        enableDarkMode();
+    }
+
+    
+
+    icon.addEventListener("click", () => {
+
+        darkMode = localStorage.getItem(".dark-them");
+        if(darkMode !== "enabled"){
+            enableDarkMode();
+        }else {
+            disableDarkMode();
+        }
+    });
+    </script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
