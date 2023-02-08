@@ -3,7 +3,8 @@ const app = express();
 const mongoose = require('mongoose')
 const bodyParser = require("body-parser");
 const { response } = require('express');
-
+const cors = require('cors');
+app.use(cors());
 
 app.use(bodyParser.urlencoded({extended: true}));
 
@@ -74,7 +75,7 @@ app.post("/", makeVote)
 app.get("/:id", getVote);
 
 
+app.listen(3000, '0.0.0.0', function() {
+    console.log('Listening to port:  ' + 3000);
+});
 
-app.listen(3000, function() {
-    console.log("server running on port 3000");
-})

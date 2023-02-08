@@ -4,11 +4,12 @@ const express = require('express')
 const mongoose = require('mongoose')
 mongoose.set('strictQuery', true);
 const pokemonRoutes = require('./routes/pokemon')
+const cors = require('cors');
 
 
 //express app
 const app = express()
-
+app.use(cors());
 
 //middleware
 app.use(express.json())

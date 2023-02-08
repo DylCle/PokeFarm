@@ -12,7 +12,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
     <link rel="apple-touch-con" type="image/png" sizes="180x180" href="favicon/apple-touch-icon.png">
-    <link rel="stylesheet" href="../base.css">
+    <link rel="stylesheet" href="../css/base.css">
     <link rel="stylesheet" href="game-showcase.css">
     <title>PokeFarm</title>
 </head>
@@ -21,13 +21,13 @@
         <div id="head">
             <div class="logoArea">
                 <div > <img id="icon" src="../darkmodetoogle.png" alt=""></div>
-                <a href="../index.html"><img id="logo" src="../logo.png" alt=""></a>
+                <a href="../index.html"><img id="logo" src="../imgs/logo.png" alt=""></a>
             </div>
         </div>
 
         <div id="gameHeading">
             <div id="imgSlot">
-                <img src="../Box-Art/platinum-box.png" style="border-radius: 2%; border: 1px solid rgb(155, 155, 155);" alt="">
+                <img src="../imgs/Box-Art/platinum-box.png" style="border-radius: 2%; border: 1px solid rgb(155, 155, 155);" alt="">
             </div>
 
             <div id="gameInfo">
@@ -75,12 +75,12 @@
     const enableDarkMode = () => {
         document.body.classList.add("dark-them");
         localStorage.setItem(".dark-them", "enabled");
-        icon.src = "../sun.png";
+        icon.src = "../imgs/sun.png";
     };
     const disableDarkMode = () => {
         document.body.classList.remove("dark-them");
         localStorage.setItem(".dark-them", null);
-        icon.src = "../darkmodetoogle.png";
+        icon.src = "../imgs/darkmodetoogle.png";
     };
 
     if (darkMode === "enabled") {
