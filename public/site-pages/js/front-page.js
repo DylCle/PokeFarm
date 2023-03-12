@@ -4,7 +4,7 @@
 function capFirstLetter(string) {
     return string.charAt(0).toUpperCase() + string.slice(1)
 }
-fetch('http://192.168.2.35:3000/voted')
+fetch('http://localhost:3000/voted')
 .then((response) => response.json())
 .then(data => {
     obj = data;
@@ -14,7 +14,7 @@ fetch('http://192.168.2.35:3000/voted')
     async function foo() {
         let obj;
       
-        const res = await fetch('http://192.168.2.35:3000/voted')
+        const res = await fetch('http://localhost:3000/voted')
       
         obj = await res.json();
         fetch(`https://pokeapi.co/api/v2/pokemon/${obj}`)
@@ -39,7 +39,7 @@ fetch('http://192.168.2.35:3000/voted')
       async function doo() {
         let obj;
       
-        const res = await fetch('http://192.168.2.35:3000/voted')
+        const res = await fetch('http://localhost:3000/voted')
       
         obj = await res.json();
 
@@ -62,9 +62,9 @@ fetch('http://192.168.2.35:3000/voted')
     const flavorText = flavorTextEntry.flavor_text;
 
     document.querySelector("#weekInfo").innerHTML = `
-    <p id="nameOfPkmn">
-   
-              ${capFirstLetter(obj)}
+    <h1 id="nameOfPkmn" style="font-family: 'Pokemon Solid'; margin: 0; color: #FFCD00; -webkit-text-stroke: 1px #356ABC;  ">${capFirstLetter(obj)}</h1>
+    <p id="pokeDex">
+              
               ${flavorText}
                </p>
 `

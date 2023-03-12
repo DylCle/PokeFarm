@@ -4,6 +4,7 @@ const mongoose = require('mongoose')
 const bodyParser = require("body-parser");
 const { response } = require('express');
 const cors = require('cors');
+const requestIP = require('request-ip');
 app.use(cors());
 
 app.use(bodyParser.urlencoded({extended: true}));
@@ -67,6 +68,12 @@ app.get("/voted", (req,res) => {
 
 })
 
+app.get('/',(req,res) => {
+    const ipAddress = requestIP.getClientIp(req);
+    res.send(ipAddress);
+
+});
+app.listen(3000, () => console.log('Server is on port 3000'));
 
 
 
@@ -74,8 +81,8 @@ app.post("/", makeVote)
 
 app.get("/:id", getVote);
 
-
+/*
 app.listen(3000, '0.0.0.0', function() {
     console.log('Listening to port:  ' + 3000);
 });
-
+*/
