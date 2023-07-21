@@ -26,8 +26,10 @@
     font-family: sans-serif;
     color: var(--secondary-color);
     
-
 }
+
+
+
 body{background-image: var(--main-background); }
 
 body:before{
@@ -215,10 +217,8 @@ body{
     body{
         background-attachment: fixed;
         background-size: contain;
-        margin: 4em auto;
-      
+        margin: 0 auto;
     }
-
 
 
     #logoForWeek {
